@@ -1,0 +1,66 @@
+.card {
+  margin-top: $s-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 4px;
+  background-color: white;
+  max-width: 100%
+}
+
+@media (min-width: $xl-breakpoint) {
+  .card {
+    max-width: 33%
+  }
+}
+
+@media (min-width: $m-breakpoint) and (max-width: $xl-breakpoint) {
+  .card {
+    max-width: 48%;
+  }
+}
+
+.card__title {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0;
+  flex-basis: 8%;
+  padding-top: $s-size;
+  padding-bottom: $s-size;
+}
+
+.card__genres {
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px;
+}
+
+.card__genres--genre {
+  background-color: $light-grey;
+  border-radius: 4px;
+  margin: $s-size;
+  padding: 2px;
+}
+
+.card__description {
+  margin: $s-size;
+  padding: 2px;
+  flex-basis: 30%;
+}
+
+.card__price {
+  margin: $s-size;
+  padding: 2px;
+}
+
+.card__image {
+  width: 140px;
+  margin: $s-size auto;
+  height: 200px;
+  flex-basis: 25%;
+}
+
+.card__btn {
+  flex-basis: 5%;
+}

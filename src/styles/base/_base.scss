@@ -5,6 +5,7 @@ html {
 body {
   font-family: 'Calibri', Arial, sans-serif;
   font-size: $m-size;
+  background-color: $light-grey;
 }
 
 button {
@@ -15,7 +16,9 @@ button:disabled {
   cursor: default;
 }
 
-.selected {
-  background-color: black;
+.header__title {
+  background: black;
   color: white;
+  text-align: center;
+  margin: 0
 }

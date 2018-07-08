@@ -13,7 +13,7 @@ const CheckoutModal = props => (
     {props.handleOpenModal && (
       <p className="modal__body">Checkout placeholder</p>
     )}
-    <button className="button" onClick={props.handleCloseModal}>
+    <button className="btn--main" onClick={props.handleCloseModal}>
       ok
     </button>
   </Modal>

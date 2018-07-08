@@ -1,16 +1,19 @@
 import React from "react";
 
 const CartItem = props => {
-  const { title, description, rating } = props;
+  const { title, description, price } = props;
   const handleRemoveFromCart = () => {
     props.handleRemoveFromCart(props);
   };
   return (
-    <div>
-      <h6>{title}</h6>
-      <p>{description}</p>
-      <p>{rating}</p>
-      <button type="button" onClick={handleRemoveFromCart}>
+    <div className="cart__item">
+      <h3 className="cart__item--title">{title}</h3>
+      <p className="cart__item--price">{price} $</p>
+      <button
+        className="cart__item--btn"
+        type="button"
+        onClick={handleRemoveFromCart}
+      >
         remove
       </button>
     </div>
